@@ -1,0 +1,208 @@
+
+.pokemon-filter{
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 10px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 4px;
+    overflow:auto;
+}
+
+.btn{
+    border:none;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 95%;
+    margin: auto;
+    letter-spacing: .7px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.25;
+    padding: 10px 20px;   
+    transition: 0.3s ease-out;
+}
+.btn:focus{
+    outline: none;
+}
+.btn.-default {
+    background-color: #f8f7f7;
+    color: #66625c; }
+    .btn.-default:hover {
+      background-color: #e9e8e7; }
+    .btn.-default.-active {
+      background-color: #a39f99; }
+.btn.-normal{
+    color: #a8a8a8;
+}
+.btn.-normal:hover{
+    background-color: rgba(168, 168, 168, 0.3);
+}
+.btn.-normal.-active{
+    background-color:  #a8a8a8;
+}
+
+.btn.-fighting{
+    color:#c03028;
+}
+.btn.-fighting:hover{
+    background-color: rgba(192, 48, 40, 0.2);
+}
+.btn.-fighting.-active{
+    background-color: #c03028;
+}
+.btn.-flying{
+    color:#A98FF3;
+}
+.btn.-flying:hover{
+    background-color: rgba(169,143,243, 0.2);
+}
+.btn.-flying.-active{
+    background-color: #A98FF3;
+}
+.btn.-poison{
+    color: #A33EA1;
+}
+.btn.-poison:hover{
+    background-color: rgba(163,62,161, 0.2);
+}
+.btn.-poison.-active{
+    background-color: #A33EA1;
+}
+.btn.-ground{
+    color: #E2BF65;
+}
+.btn.-ground:hover{
+    background-color: rgba(226,191,101, 0.2);
+}
+.btn.-ground.-active{
+    background-color: #E2BF65;
+}
+.btn.-rock{
+    color: #B6A136;
+}
+.btn.-rock:hover{
+    background-color: rgba(182,161,54, 0.2);
+}
+.btn.-rock.-active{
+    background-color: #B6A136;
+}
+.btn.-bug{
+    color: #A6B91A;
+}
+.btn.-bug:hover{
+    background-color: rgba(166,185,26, 0.2);
+}
+.btn.-bug.-active{
+    background-color: #A6B91A;
+}
+.btn.-ghost{
+    color: #735797;
+}
+.btn.-ghost:hover{
+    background-color: rgba(115,87,151, 0.2);
+}
+.btn.-ghost.-active{
+    background-color: #735797;
+}
+.btn.-steel{
+    color: #B7B7CE;
+}
+.btn.-steel:hover{
+    background-color: rgba(83,183,206, 0.2);
+}
+.btn.-steel.-active{
+    background-color: #B7B7CE;
+}
+.btn.-fire{
+    color: #EE8130;
+}
+.btn.-fire:hover{
+    background-color: rgba(238,129,48, 0.2);
+}
+.btn.-fire.-active{
+    background-color: #EE8130;
+}
+.btn.-water{
+    color: #6390F0;
+}
+.btn.-water:hover{
+    background-color: rgba(99,144,240, 0.2);
+}
+.btn.-water.-active{
+    background-color: #6390F0;
+}
+.btn.-grass{
+    color: #7AC74C;
+}
+.btn.-grass:hover{
+    background-color: rgba(122,199,76, 0.2);
+}
+.btn.-grass.-active{
+    background-color: #7AC74C;
+}
+.btn.-electric{
+    color: #F7D02C;
+}
+.btn.-electric:hover{
+    background-color: rgba(247,208,44, 0.2);
+}
+.btn.-electric.-active{
+    background-color: #F7D02C;
+}
+.btn.-psychic{
+    color: #F95587;
+}
+.btn.-psychic:hover{
+    background-color: rgba(249,85,135, 0.2);
+}
+.btn.-psychic.-active{
+    background-color: #F95587;
+}
+.btn.-ice{
+    color: #96D9D6;
+}
+.btn.-ice:hover{
+    background-color: rgba(150,217,214, 0.2);
+}
+.btn.-ice.-active{
+    background-color: #96D9D6;
+}
+.btn.-dragon{
+    color: #6F35FC;
+}
+.btn.-dragon:hover{
+    background-color: rgba(111,53,252, 0.2);
+}
+.btn.-dragon.-active{
+    background-color: #6F35FC;
+}
+.btn.-dark{
+    color: #705746;
+}
+.btn.-dark:hover{
+    background-color: rgba(112,87,70, 0.2);
+}
+.btn.-dark.-active{
+    background-color: #705746;
+}
+.btn.-fairy{
+    color: #D685AD;
+}
+.btn.-fairy:hover{
+    background-color: rgba(214,133,173, 0.2);
+}
+.btn.-fairy.-active{
+    background-color: #D685AD;
+}
+
+.btn.-active{
+    color: #ffffff;
+}
