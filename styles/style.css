@@ -981,9 +981,6 @@ body {
   .modal-bg .modal .modal-pokemon-card .poke-img {
     padding: 0;
   }
-  .modal-bg .modal .modal-pokemon-card .poke-info {
-    padding: 0;
-  }
   .modal-bg .modal .modal-pokemon-card .poke-info .poke-info-id {
     font-size: 80px;
   }
