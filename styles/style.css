@@ -950,7 +950,7 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .pokemon-filter {
     position: fixed;
     -webkit-transform: translateX(-100%);
