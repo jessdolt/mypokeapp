@@ -838,6 +838,10 @@ body {
   color: rgba(0, 0, 0, 0.06);
   font-weight: 1000;
   z-index: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .pokemon-card .poke-name {
