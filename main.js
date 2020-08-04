@@ -29,6 +29,18 @@ const fetchPokemon = () => {
 
 fetchPokemon();
 
+window.addEventListener('scroll',function(e){
+  const windowHeight = document.documentElement.clientHeight;
+  console.log(windowHeight);
+  const currentHeight = window.scrollY;
+  console.log(currentHeight)
+  if(windowHeight === currentHeight){
+    alert("reached");
+  }
+  
+})
+
+
 const pokeContainer = document.getElementById("showPokemon");
 const displayPokemon = (poke) => {
   const pokeCardOutput = poke
@@ -80,7 +92,17 @@ const displayPokemon = (poke) => {
     )
     .join(" ");
   pokeContainer.innerHTML = pokeCardOutput;
+
+ 
 };
+
+
+function checkDiv(){
+  const pokeCardDiv = document.querySelectorAll('.pokemon-card');
+  for(let i = 25; i < pokeCardDiv.length; i++){
+    pokeCardDiv[i].style.display="none";
+  }
+}
 
 async function modal_popup(id) {
   evolutionURL(id);
@@ -103,13 +125,11 @@ const getPokeEvolution = (url,id) => {
         pokemonEvolution(evolutionChain,id);
       }
       else if(checkEvolution.length == 1){
-        console.log(`theres an evolution for ${data.chain.species.name}`);
           if(data.chain.evolves_to[0].evolves_to.length == 1){
                 let evolutionChain = []     
                 evolutionChain.push(data.chain.species.name);
                 evolutionChain.push(data.chain.evolves_to[0].species.name);
-                evolutionChain.push(data.chain.evolves_to[0].evolves_to[0].species.name);
-                console.log("processing");           
+                evolutionChain.push(data.chain.evolves_to[0].evolves_to[0].species.name);          
                 pokemonEvolution(evolutionChain,id);
           }
           else{
@@ -153,8 +173,7 @@ const modalBox = document.querySelector(".modal-bg");
 
 function displayPopup(poke_modal, pokeEvolution) {
   modalBox.classList.add("bg-active");
-  const evolution = pokeEvolution; 
-
+  const evolution = pokeEvolution;
   let evolutionHTML ='';
   if (evolution.length==3){
     evolutionHTML =  `<div class="evol-box">
@@ -454,12 +473,6 @@ modalBox.addEventListener("click", (e) => {
     modalBox.classList.remove("bg-active");
   }
 });
- 
-
-
-
-
-
 
 const max_stats = {
   hp: "250",
