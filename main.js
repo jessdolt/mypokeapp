@@ -533,6 +533,7 @@ const button = document.querySelectorAll(".btn");
 button.forEach((btn) => {
   btn.addEventListener("click", function () {
     const current = document.getElementsByClassName("-active");
+    console.log(current[0]);
     current[0].className = current[0].className.replace("-active", "");
     this.classList.add("-active");
     const filterName = btn.textContent.toLowerCase();
@@ -550,4 +551,26 @@ function pokeFilter(filterName) {
   );
   displayPokemon(newPoke);
 }
+
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const sideNav = document.querySelector('.pokemon-filter');
+  const sideLinks = document.querySelectorAll('.btn');
+
+  burger.addEventListener('click', () =>{
+    sideNav.classList.toggle('-slide');
+    burger.classList.toggle('-active');
+    burger.classList.toggle('toggle');
+    const btns = document.querySelectorAll('.btn');
+    btns.forEach(btn => {
+      btn.addEventListener('click', ()=>{
+        sideNav.classList.remove('-slide');
+        burger.classList.remove('-active');
+        burger.classList.remove('toggle');
+      })
+    });
+  })
+}
+navSlide();
+
 
